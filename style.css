@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.prototipo {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-contenedor {
+    position: relative; /* Esto permite que los elementos "hora" y "fecha" se posicionen encima */
+    display: inline-block; /* Asegura que se ajuste solo al tamaño de la imagen */
+    width: 360px; /* Ancho de tu imagen */
+    height: auto; /* Ajusta la altura automáticamente según la imagen */
+}
+
+/* La hora encima del espacio designado */
+.hora {
+    position: absolute;
+    top: 17.5%; /* Ajusta para centrar en la parte superior de la imagen */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta el punto de referencia al centro */
+    color: #000002; /* Ajusta según el diseño */
+    font-family: "Microsoft Sans Serif", sans-serif;
+    font-size: 31px; /* Tamaño del texto */
+    font-weight: normal;
+}
+
+/* La fecha más abajo */
+.fecha {
+    white-space: nowrap; /* Fuerza todo el texto a estar en una sola línea */
+    position: absolute;
+    top: 23.5%; /* Ajusta para que quede en el espacio para la fecha */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #485162;
+    font-family: "Microsoft Sans Serif", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+}
+
